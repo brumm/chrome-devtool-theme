@@ -1,0 +1,21 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+  "build_systems":
+  [
+      {
+          "name": "Compile and replace Custom.css",
+          "cmd":
+          [
+            "sh",
+            "${file_path}/build.sh"
+          ],
+          "selector": "source.sass",
+          "line_regex": "Line ([0-9]+):"
+      }
+  ]
+}
