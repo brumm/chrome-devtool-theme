@@ -22,7 +22,8 @@
           "cmd":
           [
             "sh",
-            "${file_path}/build.sh"
+            "-c",
+            "cd \"${project_path}\" && sh \"${project_path}/build.sh\""
           ],
           "selector": "source.sass",
           "line_regex": "Line ([0-9]+):"
