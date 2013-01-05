@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sass --update Custom.sass:Custom.css
-cp -v Custom.css ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets
+sass --update ./Custom.sass:./export/Custom.css
+cp -v ./export/Custom.css ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets

@@ -17,5 +17,9 @@
           "selector": "source.sass",
           "line_regex": "Line ([0-9]+):"
       }
-  ]
+  ],
+  "settings":
+  {
+    "build_on_save": 1
+  }
 }
