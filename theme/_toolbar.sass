@@ -1,0 +1,49 @@
+// toolbar
+
+#toolbar
+  background: $noisy-background, -webkit-linear-gradient(top, $toolbar-light-color, $toolbar-dark-color) !important
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 -1px 0 rgba(255, 255, 255, 0.18) inset
+  border-bottom: 1px solid darken($toolbar-dark-color, 20%) !important
+  border-top: none !important
+  height: auto !important
+  padding: 0 !important
+
+  .toolbar-item
+    padding: 3px 10px 4px !important
+    float: right
+    &.toggleable
+      margin: 0 !important
+      box-shadow: -1px 0 0 rgba(0, 0, 0, 0.3), 1px 0 0 rgba(255, 255, 255, 0.15) inset
+      background-color: rgba(255, 255, 255, 0.05) !important
+      -webkit-transition: all 50ms ease-in-out
+
+      &.toggled-on
+        border-width: none !important
+        -webkit-border-image: none !important
+        background-color: rgba(0, 0, 0, 0.2) !important
+        box-shadow: -1px 0 0 rgba(0, 0, 0, 0.1), -1px 0 0 rgba(0, 0, 0, 0.35), -2px 0 0 rgba(255, 255, 255, 0.15)
+
+        .toolbar-label
+          color: #fff !important
+          text-shadow: 0 1px 1px rgba(0, 0, 0, 1) !important
+
+    &.close-left
+      margin: 0 !important
+      padding: 4px 10px 0 !important
+      #close-button-left
+        border-radius: 100px
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3)
+        margin-top: 0 !important
+        padding: 0 !important
+
+    .toolbar-icon
+      display: none !important
+
+    .toolbar-label
+      margin-left: 0 !important
+      color: darken($toolbar-dark-color, 30%) !important
+      text-shadow: 0 1px 0px rgba(255, 255, 255, 0.3) !important
+      position: static !important
+      top: 0 !important
+  #toolbar-controls
+    display: none !important

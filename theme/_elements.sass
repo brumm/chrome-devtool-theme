@@ -1,0 +1,18 @@
+ol
+  & li.selected .selection, &:focus li.selected .selection
+    margin-top: -3px
+    background-color: desaturate(lighten(#75871a, 50%), 20%) !important
+  li
+    padding: 3px 0 3px 15px !important
+    margin-top: 0 !important
+    margin-bottom: 0 !important
+    &.hovered:not(.selected) .selection
+      background-color: darken($main-background-color, 5%) !important
+      border-radius: none !important
+      left: 0 !important
+      right: 0 !important
+      margin-top: -3px !important
+    &:before
+      padding-right: 4px !important
+    &.parent
+      margin-left: -14px !important

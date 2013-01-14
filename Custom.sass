@@ -1,4 +1,32 @@
 
+
 #-webkit-web-inspector
   @import theme/definitions
   @import theme/font
+  @import theme/source
+
+  @import theme/toolbar
+
+  @import theme/main
+
+  #main
+    #elements-content
+      white-space: nowrap !important
+      @import theme/elements
+    .split-view-sidebar-right
+      @import theme/styles
+
+    .panel.console
+      @import theme/console
+
+  @import theme/main-status-bar
+
+  // overrides
+  &.compact
+    @import theme/compact
+  &.undocked
+    @import theme/undocked
+  &.dock-to-right
+    @import theme/dock-to-right
+  &.inactive
+    @import theme/inactive

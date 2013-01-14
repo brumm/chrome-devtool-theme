@@ -1,0 +1,74 @@
+// console
+
+#console-view
+  bottom: 27px !important
+  #console-messages
+    overflow-x: hidden !important
+
+    .console-group
+      position: absolute !important
+      left: 0 !important
+      right: 0 !important
+
+      .console-group-messages
+        // console item containers
+        .console-message, .console-user-command
+          padding: 4px 22px 2px 5px !important
+          margin-left: 0px !important
+          border-top-color: #ebebeb !important
+
+          // console item text content
+          .console-message-text
+            // color: #3a3a3a !important
+            .webkit-html-external-link, .webkit-html-resource-link
+              max-width: 30% !important
+              display: inline-block !important
+              overflow: hidden !important
+              text-overflow: ellipsis !important
+              white-space: nowrap !important
+              text-decoration: none !important
+              color: #4a74ab !important
+
+            .console-message-url
+              position: absolute
+              right: 5px
+              top: 50%
+              margin-top: -6px
+              display: none !important
+              background-color: #fff !important
+
+          // hover over entire console item
+          &:hover
+            background-color: lighten($toolbar-light-color, 35%)
+
+            .webkit-html-external-link, .webkit-html-resource-link
+              display: inline-block !important
+
+          &:before
+            display: none !important
+
+          .section .header .title
+            line-height: normal !important
+
+        .properties-tree li
+          padding: 2px 0px !important
+          .name
+            font-weight: bold
+            color: inherit !important
+
+        .console-error-level .console-message-text,
+        .console-error-level .section .header .title
+          color: #bb3e37 !important
+
+#console-prompt
+  position: fixed !important
+  margin-left: 0 !important
+  left: 0
+  right: 0
+  padding: 6px 0 6px 20px !important
+  bottom: 23px !important
+  background-color: #f3f3f3
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2)
+  &:before
+    left: 5px !important
+    top: 1.1em !important
